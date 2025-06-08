@@ -1,0 +1,17 @@
+[
+    {"name": "Fruit/Veg", "position": 1},
+    {"name": "Deli Area", "position": 2},
+    {"name": "Bread ", "position": 3},
+    {"name": "Aisle 2", "position": 4},
+    {"name": "Aisle 3", "position": 5},
+    {"name": "Aisle 4", "position": 6},
+    {"name": "Spices", "position": 7},
+    {"name": "Aisle 5", "position": 8},
+    {"name": "Aisle 6", "position": 9},
+    {"name": "Aisle 7", "position": 10},
+    {"name": "Fridge/Freezer", "position": 11},
+    {"name": "Health Food Store", "position": 12},
+    {"name": "Woolworths", "position": 13},
+    {"name": "Elsewhere", "position": 14},
+    {"name": "Garden", "position": 15}
+]

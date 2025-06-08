@@ -1,0 +1,10 @@
+[
+    {"day": "Saturday", "recipeID": 1, "serves": 6},
+    {"day": "Sunday", "recipeID": 1, "serves": 6},
+    {"day": "Monday", "recipeID": 1, "serves": 6},
+    {"day": "Tuesday", "recipeID": 1, "serves": 6},
+    {"day": "Wednesday", "recipeID": 1, "serves": 6},
+    {"day": "Thursday", "recipeID": 1, "serves": 6},
+    {"day": "Friday", "recipeID": 1, "serves": 6},
+    {"day": "Weekly", "recipeID": 1, "serves": 1}
+]
