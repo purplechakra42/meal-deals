@@ -1,0 +1,149 @@
+:root { /* the root CLASS, used for defining global variables */
+	--normal-bg: #172526;
+	--dark-bg: #162021;
+  --border: #3c5659;
+
+	--text-normal: #ffffff;
+  --text-diminished: #d9d9d9;
+  --link-new: #139494;
+	--link-visited: #1e6469;
+
+  --table-border-small: 6px;
+  --table-border-large: 25px;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  background-color: var(--dark-bg);
+}
+
+#root { /* the root ID, which is what all React content is rendered inside of */
+  font-family: Arial, sans-serif;
+  color: var(--text-normal);
+
+  padding: 0;;
+}
+
+body {
+  padding-bottom: 70px; /*adds padding to the bottom of the main page so that content isn't covered by the navbar*/
+}
+
+/* :focus, /* any focus, not just when important */
+:focus-visible {
+  outline: 2px solid var(--link-new);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--normal-bg);
+
+  max-width: 60vw;
+  min-width: 350px;
+  margin: 16px auto;
+
+  padding: 16px;
+
+  border: 1px solid;
+  border-radius: 8px;
+  border-color: var(--border);
+}
+.wrapper:hover {
+  border-color: var(--text-diminished);
+  transition-duration: 0.1s;
+}
+
+a {
+  color: var(--link-new);
+}
+
+h1 {
+  color: var(--text-normal);
+  margin: auto;
+}
+
+input { 
+  width: 80px;
+
+  color: var(--text-normal);
+  text-align: center;
+  background-color: var(--normal-bg);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+}
+
+button {
+  color: var(--text-diminished);
+  font-size: 1em;
+  
+  padding: 0.6em 1.2em;
+  background-color: var(--dark-bg);
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  /* transition: border-color 0.1s; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* main axis */
+  align-items: center; /* orthogonal axis */
+  gap: 8px;
+    
+  cursor: pointer;
+}
+button:hover {
+  color: var(--text-normal);
+  border-color: var(--text-diminished);
+  box-shadow: inset 0px 0px 8px var(--border), 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+table { 
+  width: 80%;
+  border-collapse: separate; 
+  border-spacing: 0 6px; 
+  margin-top: -6px; /* correct offset on first border spacing if desired */
+}
+td {
+  border: solid 1px var(--border);
+  border-left: none;
+  border-right: none;
+  background-color: var(--dark-bg);
+  padding: 10px;
+}
+td:first-child {
+  border-top-left-radius: var(--table-border-small);
+  border-bottom-left-radius: var(--table-border-small);
+  border-left: solid 1px var(--border);
+
+  /* width: 30%; */
+  font-weight: bold;
+}
+td:last-child {
+  border-top-right-radius: var(--table-border-small);
+  border-bottom-right-radius: var(--table-border-small);
+  border-right: solid 1px var(--border)
+}
+tr:first-child td:first-child {
+  border-top-left-radius: var(--table-border-large); 
+}
+tr:first-child td:last-of-type {
+  border-top-right-radius: var(--table-border-large);
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: var(--table-border-large); 
+}
+tr:last-child td:last-of-type {
+  border-bottom-right-radius: var(--table-border-large);
+}
+
+td select {
+  position: relative;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: var(--dark-bg);
+  border: none;
+}

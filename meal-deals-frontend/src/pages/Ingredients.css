@@ -1,0 +1,6 @@
+.toggleactive {
+    color: var(--link-new);
+}
+.toggleinactive {
+    color: var(--text-normal);
+}

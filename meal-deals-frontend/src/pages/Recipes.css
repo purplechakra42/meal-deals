@@ -1,0 +1,42 @@
+.toggler {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    padding: 0;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    font-size: 31px;
+    color: var(--link-new);
+
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    /* border-color: var(--link-new); */
+}
+
+.toggler:after {
+    content: '+';
+    position:absolute;
+    width:40px;
+    height:40px;
+}
+
+.test {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+    
+    background-color: var(--normal-bg);
+    border: 1px solid white;
+}
+
+tr.diminished {
+    color: var(--text-diminished);
+    font-weight: normal;
+}
+tr.diminished td {
+    border: transparent;
+}

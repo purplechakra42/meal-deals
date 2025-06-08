@@ -1,0 +1,13 @@
+.active {
+    color: var(--text-normal);
+}
+.active td {
+    background-color: var(--normal-bg);
+}
+.inactive {
+    color: grey;
+    border-color: var(--normal-bg);
+}
+.inactive td {
+    border-color: var(--normal-bg);
+}
